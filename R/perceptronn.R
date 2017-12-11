@@ -94,4 +94,7 @@ perceptron <- function(iris_sub_df, rate_learn, epochs) {
 # Invoke the function perceptron.
 err <- perceptron(iris_sub_df, 0.5, 10)
 
+plot(1:10, err, type="l", lwd=2, col="red", xlab="epoch #", ylab="errors")
+title("Errors vs epoch - learning rate = 0.5")
+
 
